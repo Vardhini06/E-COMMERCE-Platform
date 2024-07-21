@@ -1,0 +1,324 @@
+------------------django------------------
+PS C:\Users\vardh\ECOMMERCE> python -m venv myenv
+PS C:\Users\vardh\ECOMMERCE> myenv\Scripts\activate
+(myenv) PS C:\Users\vardh\ECOMMERCE> pip install django
+Collecting django
+  Downloading Django-4.2.14-py3-none-any.whl (8.0 MB)
+     |████████████████████████████████| 8.0 MB 6.8 MB/s
+Collecting sqlparse>=0.3.1
+  Downloading sqlparse-0.5.1-py3-none-any.whl (44 kB)
+     |████████████████████████████████| 44 kB 998 kB/s
+Collecting tzdata
+  Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+     |████████████████████████████████| 345 kB 3.2 MB/s
+Collecting backports.zoneinfo
+  Downloading backports.zoneinfo-0.2.1-cp38-cp38-win_amd64.whl (38 kB)
+Collecting asgiref<4,>=3.6.0
+  Downloading asgiref-3.8.1-py3-none-any.whl (23 kB)
+Collecting typing-extensions>=4
+  Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+Installing collected packages: typing-extensions, tzdata, sqlparse, backports.zoneinfo, asgiref, django
+Successfully installed asgiref-3.8.1 backports.zoneinfo-0.2.1 django-4.2.14 sqlparse-0.5.1 typing-extensions-4.12.2 tzdata-2024.1
+WARNING: You are using pip version 21.1.1; however, version 24.1.2 is available.
+You should consider upgrading via the 'c:\users\vardh\ecommerce\myenv\scripts\python.exe -m pip install --upgrade pip' command.
+(myenv) PS C:\Users\vardh\ECOMMERCE> pip install django-cors-headers
+Collecting django-cors-headers
+  Downloading django_cors_headers-4.4.0-py3-none-any.whl (12 kB)
+Requirement already satisfied: django>=3.2 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django-cors-headers) (4.2.14)
+Requirement already satisfied: asgiref>=3.6 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django-cors-headers) (3.8.1)
+Requirement already satisfied: typing-extensions>=4 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from asgiref>=3.6->django-cors-headers) (4.12.2)
+Requirement already satisfied: tzdata in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->django-cors-headers) (2024.1)
+Requirement already satisfied: backports.zoneinfo in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->django-cors-headers) (0.2.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->django-cors-headers) (0.5.1)
+Installing collected packages: django-cors-headers
+Successfully installed django-cors-headers-4.4.0
+WARNING: You are using pip version 21.1.1; however, version 24.1.2 is available.
+You should consider upgrading via the 'c:\users\vardh\ecommerce\myenv\scripts\python.exe -m pip install --upgrade pip' command.
+(myenv) PS C:\Users\vardh\ECOMMERCE> pip install django-allauth
+Collecting django-allauth
+  Downloading django_allauth-0.63.6.tar.gz (1.1 MB)
+     |████████████████████████████████| 1.1 MB 1.7 MB/s
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+    Preparing wheel metadata ... done
+Requirement already satisfied: Django>=3.2 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django-allauth) (4.2.14)
+Requirement already satisfied: asgiref<4,>=3.6.0 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from Django>=3.2->django-allauth) (3.8.1)
+Requirement already satisfied: tzdata in c:\users\vardh\ecommerce\myenv\lib\site-packages (from Django>=3.2->django-allauth) (2024.1)
+Requirement already satisfied: backports.zoneinfo in c:\users\vardh\ecommerce\myenv\lib\site-packages (from Django>=3.2->django-allauth) (0.2.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from Django>=3.2->django-allauth) (0.5.1)
+Requirement already satisfied: typing-extensions>=4 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from asgiref<4,>=3.6.0->Django>=3.2->django-allauth) (4.12.2)
+Building wheels for collected packages: django-allauth
+  Building wheel for django-allauth (PEP 517) ... done
+  Created wheel for django-allauth: filename=django_allauth-0.63.6-py3-none-any.whl size=1420984 sha256=34f2c1235c0e9fc3252734320b7420c611e2681b92e472a5f8f36701c680ced3
+  Stored in directory: c:\users\vardh\appdata\local\packages\pythonsoftwarefoundation.python.3.8_qbz5n2kfra8p0\localcache\local\pip\cache\wheels\54\4b\4d\e6edf031c6b09506c0481eda9f23e804dffb75320b206d0502
+Successfully built django-allauth
+Installing collected packages: django-allauth
+Successfully installed django-allauth-0.63.6
+WARNING: You are using pip version 21.1.1; however, version 24.1.2 is available.
+You should consider upgrading via the 'c:\users\vardh\ecommerce\myenv\scripts\python.exe -m pip install --upgrade pip' command.
+(myenv) PS C:\Users\vardh\ECOMMERCE> cd ecommerce
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> python manage.py runserver
+C:\Users\vardh\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> dir
+
+
+    Directory: C:\Users\vardh\ECOMMERCE\ecommerce
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----        14-07-2024     21:33                ecommerce
+da----        14-07-2024     21:37                ecommerce-FRONTEND
+da----        14-07-2024     21:39                myenv
+-a----        08-07-2024     23:15             50 gitignore
+
+
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> ls
+
+
+    Directory: C:\Users\vardh\ECOMMERCE\ecommerce
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----        14-07-2024     21:33                ecommerce
+da----        14-07-2024     21:37                ecommerce-FRONTEND
+da----        14-07-2024     21:39                myenv
+-a----        08-07-2024     23:15             50 gitignore
+
+
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> python manage.py runserver
+C:\Users\vardh\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> cd ecommerce
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\utils\autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\core\management\commands\runserver.py", line 133, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\core\management\base.py", line 485, in check       
+    all_issues = checks.run_checks(
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\core\checks\registry.py", line 88, in run_checks   
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\core\checks\urls.py", line 14, in check_url_config 
+    return check_resolver(resolver)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\core\checks\urls.py", line 24, in check_resolver   
+    return check_method()
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\urls\resolvers.py", line 494, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\urls\resolvers.py", line 715, in url_patterns      
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\urls\resolvers.py", line 708, in urlconf_module    
+    return import_module(self.urlconf_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce\ecommerce\urls.py", line 20, in <module>
+    path('',include('ecom.urls')),
+  File "C:\Users\vardh\ECOMMERCE\myenv\lib\site-packages\django\urls\conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce\ecom\urls.py", line 2, in <module>
+    from .views import ProductView,addCart,UserRegister,getCart,addOrder,getOrders,login,deleteCartObject,getUsers,updateCart,searchProducts,getItem
+  File "C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce\ecom\views.py", line 5, in <module>
+    from .serializers import orderSerializer,productSerializer,cartSerializer
+  File "C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce\ecom\serializers.py", line 2, in <module>
+    from rest_framework import serializers
+ModuleNotFoundError: No module named 'rest_framework'
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce> pip install djangorestframework
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001D49DEB32E0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/djangorestframework/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x000001D49DE9D820>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/djangorestframework/
+Collecting djangorestframework
+  Downloading djangorestframework-3.15.2-py3-none-any.whl (1.1 MB)
+     |████████████████████████████████| 1.1 MB 2.2 MB/s
+Requirement already satisfied: backports.zoneinfo in c:\users\vardh\ecommerce\myenv\lib\site-packages (from djangorestframework) (0.2.1)
+Requirement already satisfied: django>=4.2 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from djangorestframework) (4.2.14)
+Requirement already satisfied: asgiref<4,>=3.6.0 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=4.2->djangorestframework) (3.8.1)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=4.2->djangorestframework) (0.5.1)
+Requirement already satisfied: tzdata in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=4.2->djangorestframework) (2024.1)
+Requirement already satisfied: typing-extensions>=4 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from asgiref<4,>=3.6.0->django>=4.2->djangorestframework) (4.12.2)
+Installing collected packages: djangorestframework
+Successfully installed djangorestframework-3.15.2
+WARNING: You are using pip version 21.1.1; however, version 24.1.2 is available.
+You should consider upgrading via the 'c:\users\vardh\ecommerce\myenv\scripts\python.exe -m pip install --upgrade pip' command.
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce> pip install djangorestframework-simplejwt
+Collecting djangorestframework-simplejwt
+  Downloading djangorestframework_simplejwt-5.3.1-py3-none-any.whl (101 kB)
+     |████████████████████████████████| 101 kB 894 kB/s
+Requirement already satisfied: djangorestframework>=3.12 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from djangorestframework-simplejwt) (3.15.2)
+Collecting pyjwt<3,>=1.7.1
+  Downloading PyJWT-2.8.0-py3-none-any.whl (22 kB)
+Requirement already satisfied: django>=3.2 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from djangorestframework-simplejwt) (4.2.14)
+Requirement already satisfied: sqlparse>=0.3.1 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->djangorestframework-simplejwt) (0.5.1)
+Requirement already satisfied: asgiref<4,>=3.6.0 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->djangorestframework-simplejwt) (3.8.1)
+Requirement already satisfied: tzdata in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->djangorestframework-simplejwt) (2024.1)
+Requirement already satisfied: backports.zoneinfo in c:\users\vardh\ecommerce\myenv\lib\site-packages (from django>=3.2->djangorestframework-simplejwt) (0.2.1)
+Requirement already satisfied: typing-extensions>=4 in c:\users\vardh\ecommerce\myenv\lib\site-packages (from asgiref<4,>=3.6.0->django>=3.2->djangorestframework-simplejwt) (4.12.2)
+Installing collected packages: pyjwt, djangorestframework-simplejwt
+Successfully installed djangorestframework-simplejwt-5.3.1 pyjwt-2.8.0
+WARNING: You are using pip version 21.1.1; however, version 24.1.2 is available.
+You should consider upgrading via the 'c:\users\vardh\ecommerce\myenv\scripts\python.exe -m pip install --upgrade pip' command.
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 21, 2024 - 21:30:30
+Django version 4.2.14, using settings 'ecommerce.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+Not Found: /
+[21/Jul/2024 21:30:43] "GET / HTTP/1.1" 404 4010
+Not Found: /
+[21/Jul/2024 21:30:44] "GET / HTTP/1.1" 404 4010
+Not Found: /favicon.ico
+[21/Jul/2024 21:30:44] "GET /favicon.ico HTTP/1.1" 404 4061
+[21/Jul/2024 21:31:00] "GET /products HTTP/1.1" 200 24826
+[21/Jul/2024 21:31:42] "GET /products HTTP/1.1" 200 24826
+
+
+----------------------------node.js---------------------
+PS C:\Users\vardh\ECOMMERCE> python -m venv myenv
+Error: [Errno 13] Permission denied: 'C:\\Users\\vardh\\ECOMMERCE\\myenv\\Scripts\\python.exe'
+PS C:\Users\vardh\ECOMMERCE> myenv\Scripts\activate
+(myenv) PS C:\Users\vardh\ECOMMERCE> npm install -g @angular/cli
+>> 
+>> 
+
+changed 262 packages in 11s
+
+46 packages are looking for funding
+  run `npm fund` for details
+(myenv) PS C:\Users\vardh\ECOMMERCE> ng serve
+Error: This command is not available when running the Angular CLI outside a workspace.
+(myenv) PS C:\Users\vardh\ECOMMERCE> node --v
+C:\Program Files\nodejs\node.exe: bad option: --v
+(myenv) PS C:\Users\vardh\ECOMMERCE> node -v
+v20.15.1
+(myenv) PS C:\Users\vardh\ECOMMERCE> npm -v
+10.1.0
+(myenv) PS C:\Users\vardh\ECOMMERCE> npm install -g @angular/cli
+
+changed 262 packages in 10s
+
+46 packages are looking for funding
+  run `npm fund` for details
+(myenv) PS C:\Users\vardh\ECOMMERCE> npm install --force
+npm WARN using --force Recommended protections disabled.
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\Users\vardh\ECOMMERCE/package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\Users\vardh\ECOMMERCE\package.json'     
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in: C:\Users\vardh\AppData\Local\npm-cache\_logs\2024-07-21T16_09_31_711Z-debug-0.log
+(myenv) PS C:\Users\vardh\ECOMMERCE> npm install
+npm ERR! code ENOENT
+npm ERR! syscall open
+npm ERR! path C:\Users\vardh\ECOMMERCE/package.json
+npm ERR! errno -4058
+npm ERR! enoent ENOENT: no such file or directory, open 'C:\Users\vardh\ECOMMERCE\package.json'     
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent
+
+npm ERR! A complete log of this run can be found in: C:\Users\vardh\AppData\Local\npm-cache\_logs\2024-07-21T16_10_01_619Z-debug-0.log
+(myenv) PS C:\Users\vardh\ECOMMERCE> cd ecommerce-FRONTEND
+cd : Cannot find path 'C:\Users\vardh\ECOMMERCE\ecommerce-FRONTEND' because it does not exist.
+At line:1 char:1
++ cd ecommerce-FRONTEND
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\vardh\...mmerce-FRONTEND:String) [Set-Loca  
+   tion], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+(myenv) PS C:\Users\vardh\ECOMMERCE> cd ecommerce
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> cd ecommerce-FRONTEND
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce-FRONTEND> npm install -g @angular/cli
+
+changed 262 packages in 53s
+
+46 packages are looking for funding
+  run `npm fund` for details
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce-FRONTEND> ng serve
+? Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more
+details and how to change this setting, see https://angular.io/analytics. Yes
+
+Thank you for sharing pseudonymous usage data. Should you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics disable
+
+Global setting: enabled
+Local setting: enabled
+Effective status: enabled
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files   | Names         |  Raw Size
+vendor.js             | vendor        |   4.45 MB | 
+styles.css, styles.js | styles        | 563.53 kB | 
+polyfills.js          | polyfills     | 329.32 kB | 
+main.js               | main          | 176.66 kB | 
+scripts.js            | scripts       |  58.97 kB | 
+runtime.js            | runtime       |   6.52 kB | 
+
+                      | Initial Total |   5.56 MB
+
+Build at: 2024-07-21T16:13:39.130Z - Hash: 5fb445135c85fb90 - Time: 25995ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+6 unchanged chunks
+
+Build at: 2024-07-21T16:13:40.604Z - Hash: 5fb445135c85fb90 - Time: 1024ms
+
+√ Compiled successfully.
+✔ Browser application bundle generation complete.
+
+6 unchanged chunks
+
+Build at: 2024-07-21T16:13:41.057Z - Hash: 5fb445135c85fb90 - Time: 395ms
+
+√ Compiled successfully.
+
+----------node js authentication------------
+PS C:\Users\vardh\ECOMMERCE> myenv\Scripts\activate
+(myenv) PS C:\Users\vardh\ECOMMERCE> cd ecommerce
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce> cd ecommerce-FRONTEND
+(myenv) PS C:\Users\vardh\ECOMMERCE\ecommerce\ecommerce-FRONTEND> node ./index.js
+app is running in 5000
+
+
+ecommerce-FRONTEND/src/app/services/product.service.ts : this(it has urls for each data) is used to connect to the backend data 
+with the front end
